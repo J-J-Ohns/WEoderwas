@@ -91,4 +91,5 @@ function onListening() {
   if (typeof addr !== 'string') {
     debug(`http://localhost:${addr.port}`);
   }
+  console.log(`Server is running on http://localhost:${addr.port} 🚀`);
 }

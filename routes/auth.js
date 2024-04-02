@@ -45,7 +45,7 @@ router.post('/register', [validUsername, usernameAvailable, validPassword], asyn
     res.redirect('/')
 })
 
-router.post('/logout', (req, res, next) => {
+router.post('auth/logout', (req, res, next) => {
     res.clearCookie('bearer').json({ message: 'Logout successfull' })
 })
 

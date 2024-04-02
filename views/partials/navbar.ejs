@@ -5,9 +5,10 @@
 		</h2>
 	</div>
 	<div class="mt-4 flex md:mt-0 md:ml-4 space-x-4">
+		<p><%= typeof username !== 'undefined' ? username : '' %></p>
         <%- typeof addLink !== 'undefined' ? include(`${root}/views/partials/link`, { link: '/addList',
 		text: 'Add' }) : null %>
-
+		 
         <%- include(`${root}/views/partials/link`, { link: '/auth/logout', text: 'Logout', color: 'bg-red-500 hover:bg-red-600 text-white' }) %>
 	</div>
 </div>
